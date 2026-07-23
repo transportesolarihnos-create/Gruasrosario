@@ -4,12 +4,81 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Grúas Rosario 24 hs | Grúa y Auxilio Mecánico en Rosario</title>
+<title>Grúas Rosario 24 hs | Grúa, Remolque y Auxilio Mecánico</title>
 
-<meta name="description" content="Servicio de grúa y auxilio mecánico 24 hs en Rosario. Remolque de autos, motos, camionetas y traslado de máquinas hasta 3000 kg. Rosario, alrededores y larga distancia.">
+<meta name="description" content="Grúa en Rosario las 24 hs. Auxilio mecánico, remolque de autos, motos y camionetas, traslado de vehículos y máquinas hasta 3000 kg. Rosario, alrededores y larga distancia.">
 
-<meta name="robots" content="index, follow">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Grúas Rosario">
 <meta name="theme-color" content="#111827">
+
+<link rel="canonical" href="https://gruarosario.com.ar/">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="es_AR">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Grúas Rosario 24 hs | Grúa y Auxilio Mecánico">
+<meta property="og:description" content="Servicio de grúa, remolque y auxilio mecánico las 24 hs en Rosario. Autos, motos, camionetas, máquinas y larga distancia.">
+<meta property="og:url" content="https://gruarosario.com.ar/">
+<meta property="og:site_name" content="Grúas Rosario">
+<meta property="og:image" content="https://gruarosario.com.ar/grua_07.jpg">
+
+<!-- SEO local / Datos estructurados -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "https://gruarosario.com.ar/#negocio",
+  "name": "Grúas Rosario",
+  "url": "https://gruarosario.com.ar/",
+  "image": "https://gruarosario.com.ar/grua_07.jpg",
+  "telephone": "+543412098098",
+  "description": "Servicio de grúa, remolque, auxilio mecánico y traslado de vehículos en Rosario y alrededores. Traslado de máquinas y cargas de hasta 3000 kg y servicios de larga distancia.",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Rosario",
+    "addressRegion": "Santa Fe",
+    "addressCountry": "AR"
+  },
+  "areaServed": [
+    {
+      "@type": "City",
+      "name": "Rosario"
+    },
+    {
+      "@type": "State",
+      "name": "Santa Fe"
+    },
+    {
+      "@type": "Country",
+      "name": "Argentina"
+    }
+  ],
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "opens": "00:00",
+      "closes": "23:59"
+    }
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+543412098098",
+    "contactType": "customer service",
+    "availableLanguage": "Spanish"
+  }
+}
+</script>
 
 <style>
 *{
@@ -209,6 +278,30 @@ section{
     margin-bottom:12px;
 }
 
+.seo-text{
+    background:white;
+}
+
+.seo-content{
+    max-width:850px;
+    margin:auto;
+}
+
+.seo-content h2{
+    font-size:31px;
+    margin-bottom:20px;
+}
+
+.seo-content h3{
+    margin-top:25px;
+    margin-bottom:8px;
+}
+
+.seo-content p{
+    color:#475569;
+    margin-bottom:15px;
+}
+
 .cta{
     text-align:center;
     background:#f59e0b;
@@ -325,7 +418,12 @@ footer strong{
 <header>
     <div class="header-content">
         <div class="logo">GRÚAS ROSARIO</div>
-        <a class="header-phone" href="tel:+543412098098">📞 341 209-8098</a>
+
+        <a class="header-phone track-call"
+           href="tel:+543412098098"
+           aria-label="Llamar a Grúas Rosario">
+            📞 341 209-8098
+        </a>
     </div>
 </header>
 
@@ -345,15 +443,19 @@ footer strong{
         </p>
 
         <div class="actions">
-            <a class="btn whatsapp"
+
+            <a class="btn whatsapp track-whatsapp"
                href="https://wa.me/543412098098?text=Hola%2C%20necesito%20consultar%20por%20un%20servicio%20de%20gr%C3%BAa."
-               target="_blank">
+               target="_blank"
+               rel="noopener">
                 💬 Pedir grúa por WhatsApp
             </a>
 
-            <a class="btn call" href="tel:+543412098098">
+            <a class="btn call track-call"
+               href="tel:+543412098098">
                 📞 Llamar ahora
             </a>
+
         </div>
 
     </div>
@@ -371,41 +473,59 @@ footer strong{
 
         <div class="services">
 
-            <div class="card">
+            <article class="card">
                 <div class="icon">🚗</div>
                 <h3>Remolque de Autos</h3>
-                <p>Traslado de autos con servicio de grúa en Rosario y alrededores.</p>
-            </div>
+                <p>
+                    Servicio de remolque y traslado de autos con grúa
+                    en Rosario y alrededores.
+                </p>
+            </article>
 
-            <div class="card">
+            <article class="card">
                 <div class="icon">🔧</div>
                 <h3>Auxilio Mecánico</h3>
-                <p>Asistencia para vehículos con inconvenientes mecánicos que necesitan ayuda o traslado.</p>
-            </div>
+                <p>
+                    Auxilio mecánico para vehículos con inconvenientes
+                    que necesitan asistencia o traslado.
+                </p>
+            </article>
 
-            <div class="card">
+            <article class="card">
                 <div class="icon">🏍️</div>
                 <h3>Traslado de Motos</h3>
-                <p>Transporte de motos cuidando el vehículo durante todo el traslado.</p>
-            </div>
+                <p>
+                    Transporte de motos cuidando el vehículo durante
+                    todo el traslado.
+                </p>
+            </article>
 
-            <div class="card">
+            <article class="card">
                 <div class="icon">🛻</div>
                 <h3>Autos y Camionetas</h3>
-                <p>Traslado de autos, utilitarios y camionetas en Rosario y otras localidades.</p>
-            </div>
+                <p>
+                    Traslado de autos, utilitarios y camionetas en
+                    Rosario y otras localidades.
+                </p>
+            </article>
 
-            <div class="card">
+            <article class="card">
                 <div class="icon">🏗️</div>
                 <h3>Traslado de Máquinas</h3>
-                <p>Transporte de máquinas y cargas en general de hasta 3.000 kg.</p>
-            </div>
+                <p>
+                    Transporte de máquinas y cargas en general de
+                    hasta 3.000 kg.
+                </p>
+            </article>
 
-            <div class="card">
+            <article class="card">
                 <div class="icon">🛣️</div>
-                <h3>Larga Distancia</h3>
-                <p>Traslados desde Rosario hacia otras localidades y provincias.</p>
-            </div>
+                <h3>Grúa de Larga Distancia</h3>
+                <p>
+                    Traslados desde Rosario hacia otras localidades
+                    y provincias de Argentina.
+                </p>
+            </article>
 
         </div>
     </div>
@@ -417,7 +537,7 @@ footer strong{
         <h2 class="section-title">Trabajos y Traslados Realizados</h2>
 
         <p class="section-subtitle">
-            Algunos de nuestros servicios de grúa, remolque,
+            Algunos de nuestros servicios reales de grúa, remolque,
             traslado de vehículos, camionetas, máquinas y cargas.
         </p>
 
@@ -425,35 +545,51 @@ footer strong{
 
             <img src="grua_01.jpg"
                  alt="Servicio de grúa y traslado de vehículo en Rosario"
-                 loading="lazy">
+                 loading="lazy"
+                 width="800"
+                 height="600">
 
             <img src="grua_02.jpg"
-                 alt="Grúa para traslado de cargas en Rosario"
-                 loading="lazy">
+                 alt="Traslado de máquinas y cargas con grúa en Rosario"
+                 loading="lazy"
+                 width="800"
+                 height="600">
 
             <img src="grua_03.jpg"
                  alt="Remolque de camioneta con grúa en Rosario"
-                 loading="lazy">
+                 loading="lazy"
+                 width="800"
+                 height="600">
 
             <img src="grua_04.jpg"
-                 alt="Auxilio y traslado de vehículo en Rosario"
-                 loading="lazy">
+                 alt="Auxilio y traslado de vehículo con grúa en Rosario"
+                 loading="lazy"
+                 width="800"
+                 height="600">
 
             <img src="grua_05.jpg"
-                 alt="Servicio de grúa para camioneta en Rosario"
-                 loading="lazy">
+                 alt="Servicio de grúa para camionetas en Rosario"
+                 loading="lazy"
+                 width="800"
+                 height="600">
 
             <img src="grua_06.jpg"
-                 alt="Traslado de vehículo con plancha en Rosario"
-                 loading="lazy">
+                 alt="Traslado de vehículo en grúa plancha Rosario"
+                 loading="lazy"
+                 width="800"
+                 height="600">
 
             <img src="grua_07.jpg"
-                 alt="Grúa y auxilio mecánico 24 horas Rosario"
-                 loading="lazy">
+                 alt="Grúa y auxilio mecánico 24 horas en Rosario"
+                 loading="lazy"
+                 width="800"
+                 height="600">
 
             <img src="grua_08.jpg"
-                 alt="Servicio de remolque y transporte Rosario"
-                 loading="lazy">
+                 alt="Servicio de remolque y transporte de vehículos Rosario"
+                 loading="lazy"
+                 width="800"
+                 height="600">
 
         </div>
 
@@ -466,7 +602,7 @@ footer strong{
         <h2 class="section-title">Grúa en Rosario y Alrededores</h2>
 
         <p class="section-subtitle">
-            Servicio disponible las 24 horas para emergencias,
+            Servicio disponible las 24 horas para auxilios,
             traslados programados y larga distancia.
         </p>
 
@@ -481,21 +617,70 @@ footer strong{
     </div>
 </section>
 
+<section class="seo-text">
+    <div class="seo-content">
+
+        <h2>Servicio de Grúa 24 Horas en Rosario</h2>
+
+        <p>
+            En Grúas Rosario brindamos servicio de grúa, remolque y
+            auxilio mecánico las 24 horas para autos, motos, camionetas
+            y otros vehículos en Rosario y alrededores.
+        </p>
+
+        <h3>Auxilio mecánico y remolque en Rosario</h3>
+
+        <p>
+            Si tu vehículo presenta un inconveniente y necesitás asistencia,
+            podés comunicarte directamente por teléfono o WhatsApp para
+            consultar disponibilidad, ubicación y presupuesto.
+        </p>
+
+        <h3>Traslado de vehículos y máquinas</h3>
+
+        <p>
+            Además de servicios de grúa para vehículos, realizamos traslados
+            de máquinas y cargas en general de hasta 3.000 kg, tanto dentro
+            de Rosario como hacia otras localidades.
+        </p>
+
+        <h3>Traslados de larga distancia</h3>
+
+        <p>
+            Realizamos viajes desde Rosario hacia diferentes localidades
+            y provincias. Consultanos indicando origen, destino y tipo de
+            vehículo o carga para solicitar presupuesto.
+        </p>
+
+    </div>
+</section>
+
 <section class="cta">
 
     <div class="container">
 
-        <h2>¿Necesitás una grúa?</h2>
+        <h2>¿Necesitás una grúa en Rosario?</h2>
 
         <p>
-            Escribinos por WhatsApp y consultá disponibilidad y presupuesto.
+            Escribinos por WhatsApp o llamanos para consultar
+            disponibilidad y presupuesto.
         </p>
 
-        <a class="btn whatsapp"
-           href="https://wa.me/543412098098?text=Hola%2C%20necesito%20una%20gr%C3%BAa.%20Quisiera%20consultar%20disponibilidad%20y%20precio."
-           target="_blank">
-            💬 WhatsApp 341 209-8098
-        </a>
+        <div class="actions">
+
+            <a class="btn whatsapp track-whatsapp"
+               href="https://wa.me/543412098098?text=Hola%2C%20necesito%20una%20gr%C3%BAa.%20Quisiera%20consultar%20disponibilidad%20y%20precio."
+               target="_blank"
+               rel="noopener">
+                💬 WhatsApp 341 209-8098
+            </a>
+
+            <a class="btn call track-call"
+               href="tel:+543412098098">
+                📞 Llamar ahora
+            </a>
+
+        </div>
 
     </div>
 
@@ -505,17 +690,42 @@ footer strong{
 
 <footer>
     <strong>Grúas Rosario</strong><br>
-    Grúa, remolque y auxilio mecánico 24 hs.<br>
-    Rosario, Santa Fe y traslados de larga distancia.<br><br>
+    Grúa · Remolque · Auxilio Mecánico · Traslado de Vehículos<br>
+    Rosario, Santa Fe · Atención 24 hs · Larga distancia<br><br>
     📞 341 209-8098
 </footer>
 
-<a class="float-whatsapp"
+<a class="float-whatsapp track-whatsapp"
    href="https://wa.me/543412098098?text=Hola%2C%20necesito%20consultar%20por%20una%20gr%C3%BAa."
    target="_blank"
-   aria-label="Contactar por WhatsApp">
+   rel="noopener"
+   aria-label="Contactar a Grúas Rosario por WhatsApp">
     💬
 </a>
+
+<script>
+document.querySelectorAll('.track-whatsapp').forEach(function(element) {
+    element.addEventListener('click', function() {
+        if (typeof gtag === 'function') {
+            gtag('event', 'click_whatsapp', {
+                'event_category': 'contacto',
+                'event_label': 'WhatsApp'
+            });
+        }
+    });
+});
+
+document.querySelectorAll('.track-call').forEach(function(element) {
+    element.addEventListener('click', function() {
+        if (typeof gtag === 'function') {
+            gtag('event', 'click_llamada', {
+                'event_category': 'contacto',
+                'event_label': 'Llamada'
+            });
+        }
+    });
+});
+</script>
 
 </body>
 </html>
