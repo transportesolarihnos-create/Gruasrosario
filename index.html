@@ -1,452 +1,520 @@
 <!DOCTYPE html>
 <html lang="es-AR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Grúas Rosario 24 hs | Grúa y Auxilio Mecánico en Rosario</title>
+<title>Grúas Rosario 24 hs | Grúa y Auxilio Mecánico en Rosario</title>
 
-  <meta name="description" content="Servicio de grúa y auxilio mecánico 24 hs en Rosario. Remolque de autos, motos, camionetas y traslado de máquinas hasta 3000 kg. Rosario, alrededores y larga distancia.">
+<meta name="description" content="Servicio de grúa y auxilio mecánico 24 hs en Rosario. Remolque de autos, motos, camionetas y traslado de máquinas hasta 3000 kg. Rosario, alrededores y larga distancia.">
 
-  <meta name="robots" content="index, follow">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#111827">
 
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
+<style>
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    color:#111827;
+    background:#f5f6f8;
+    line-height:1.6;
+}
+
+header{
+    background:#111827;
+    color:white;
+    padding:18px 20px;
+    position:sticky;
+    top:0;
+    z-index:100;
+}
+
+.header-content{
+    max-width:1100px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:15px;
+}
+
+.logo{
+    font-size:21px;
+    font-weight:800;
+}
+
+.header-phone{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.hero{
+    background:linear-gradient(135deg,#111827,#26344d);
+    color:white;
+    padding:70px 20px 85px;
+}
+
+.hero-content{
+    max-width:950px;
+    margin:auto;
+    text-align:center;
+}
+
+.badge{
+    display:inline-block;
+    background:#f59e0b;
+    color:#111827;
+    font-weight:bold;
+    padding:8px 17px;
+    border-radius:30px;
+    margin-bottom:25px;
+}
+
+.hero h1{
+    font-size:48px;
+    line-height:1.15;
+    margin-bottom:25px;
+}
+
+.hero p{
+    max-width:760px;
+    margin:0 auto 32px;
+    font-size:21px;
+    color:#e5e7eb;
+}
+
+.actions{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    display:inline-block;
+    text-decoration:none;
+    font-weight:bold;
+    padding:16px 25px;
+    border-radius:10px;
+    font-size:18px;
+}
+
+.whatsapp{
+    background:#22c55e;
+    color:white;
+}
+
+.call{
+    background:#f59e0b;
+    color:#111827;
+}
+
+section{
+    padding:65px 20px;
+}
+
+.container{
+    max-width:1100px;
+    margin:auto;
+}
+
+.section-title{
+    text-align:center;
+    font-size:34px;
+    line-height:1.2;
+    margin-bottom:12px;
+}
+
+.section-subtitle{
+    text-align:center;
+    color:#64748b;
+    max-width:720px;
+    margin:0 auto 38px;
+}
+
+.services{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:28px 23px;
+    border-radius:14px;
+    box-shadow:0 4px 18px rgba(0,0,0,.07);
+}
+
+.card .icon{
+    font-size:35px;
+    margin-bottom:12px;
+}
+
+.card h3{
+    margin-bottom:8px;
+    font-size:20px;
+}
+
+.card p{
+    color:#64748b;
+}
+
+.gallery-section{
+    background:white;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:14px;
+}
+
+.gallery img{
+    width:100%;
+    height:260px;
+    object-fit:cover;
+    border-radius:12px;
+    display:block;
+    background:#ddd;
+}
+
+.coverage{
+    background:#111827;
+    color:white;
+}
+
+.coverage .section-subtitle{
+    color:#d1d5db;
+}
+
+.coverage-box{
+    max-width:800px;
+    margin:auto;
+    background:#1f2937;
+    padding:30px;
+    border-radius:14px;
+}
+
+.coverage-box p{
+    margin-bottom:12px;
+}
+
+.cta{
+    text-align:center;
+    background:#f59e0b;
+}
+
+.cta h2{
+    font-size:34px;
+    margin-bottom:12px;
+}
+
+.cta p{
+    margin-bottom:25px;
+    font-size:18px;
+}
+
+.cta .whatsapp{
+    font-size:20px;
+}
+
+footer{
+    background:#0b101c;
+    color:#cbd5e1;
+    text-align:center;
+    padding:30px 20px 100px;
+}
+
+footer strong{
+    color:white;
+}
+
+.float-whatsapp{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    width:64px;
+    height:64px;
+    border-radius:50%;
+    background:#22c55e;
+    color:white;
+    text-decoration:none;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:31px;
+    box-shadow:0 5px 20px rgba(0,0,0,.3);
+    z-index:200;
+}
+
+@media(max-width:800px){
+    .hero{
+        padding:65px 18px 75px;
     }
 
-    html {
-      scroll-behavior: smooth;
+    .hero h1{
+        font-size:40px;
     }
 
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      color: #1b1b1b;
-      background: #ffffff;
-      line-height: 1.6;
+    .hero p{
+        font-size:19px;
     }
 
-    header {
-      background: #111827;
-      color: white;
-      padding: 18px 20px;
-      position: sticky;
-      top: 0;
-      z-index: 10;
+    .services{
+        grid-template-columns:1fr;
     }
 
-    .header-content {
-      max-width: 1100px;
-      margin: auto;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 15px;
+    .gallery{
+        grid-template-columns:1fr 1fr;
     }
 
-    .logo {
-      font-size: 21px;
-      font-weight: 800;
+    .gallery img{
+        height:220px;
+    }
+}
+
+@media(max-width:520px){
+    .logo{
+        font-size:18px;
     }
 
-    .header-phone {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
+    .header-phone{
+        font-size:15px;
     }
 
-    .hero {
-      background: linear-gradient(135deg, #111827, #26344d);
-      color: white;
-      padding: 75px 20px;
+    .hero h1{
+        font-size:37px;
     }
 
-    .hero-content {
-      max-width: 950px;
-      margin: auto;
-      text-align: center;
+    .actions{
+        flex-direction:column;
     }
 
-    .badge {
-      display: inline-block;
-      background: #f59e0b;
-      color: #111827;
-      font-weight: bold;
-      padding: 7px 14px;
-      border-radius: 30px;
-      margin-bottom: 20px;
+    .btn{
+        width:100%;
     }
 
-    h1 {
-      font-size: 43px;
-      line-height: 1.15;
-      margin-bottom: 18px;
+    .gallery{
+        grid-template-columns:1fr;
     }
 
-    .hero p {
-      max-width: 750px;
-      margin: auto;
-      font-size: 19px;
-      color: #e5e7eb;
+    .gallery img{
+        height:auto;
+        max-height:420px;
     }
 
-    .buttons {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-top: 30px;
+    .section-title{
+        font-size:29px;
     }
-
-    .btn {
-      display: inline-block;
-      padding: 15px 25px;
-      border-radius: 8px;
-      font-weight: bold;
-      text-decoration: none;
-      font-size: 17px;
-    }
-
-    .whatsapp {
-      background: #25D366;
-      color: white;
-    }
-
-    .call {
-      background: #f59e0b;
-      color: #111827;
-    }
-
-    section {
-      padding: 65px 20px;
-    }
-
-    .container {
-      max-width: 1100px;
-      margin: auto;
-    }
-
-    h2 {
-      font-size: 32px;
-      text-align: center;
-      margin-bottom: 12px;
-    }
-
-    .subtitle {
-      text-align: center;
-      color: #555;
-      max-width: 720px;
-      margin: 0 auto 35px;
-    }
-
-    .services {
-      background: #f5f6f8;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 18px;
-    }
-
-    .card {
-      background: white;
-      padding: 28px 22px;
-      border-radius: 12px;
-      box-shadow: 0 3px 15px rgba(0,0,0,.07);
-    }
-
-    .card .icon {
-      font-size: 35px;
-      margin-bottom: 10px;
-    }
-
-    .card h3 {
-      margin-bottom: 8px;
-      font-size: 20px;
-    }
-
-    .coverage {
-      text-align: center;
-    }
-
-    .coverage-box {
-      max-width: 850px;
-      margin: 30px auto 0;
-      background: #111827;
-      color: white;
-      padding: 35px;
-      border-radius: 14px;
-    }
-
-    .coverage-box strong {
-      color: #fbbf24;
-    }
-
-    .emergency {
-      background: #f59e0b;
-      text-align: center;
-    }
-
-    .emergency h2 {
-      color: #111827;
-    }
-
-    .emergency p {
-      max-width: 650px;
-      margin: 0 auto;
-      font-size: 18px;
-    }
-
-    footer {
-      background: #0b101b;
-      color: #d1d5db;
-      padding: 35px 20px;
-      text-align: center;
-    }
-
-    footer strong {
-      color: white;
-    }
-
-    .floating-whatsapp {
-      position: fixed;
-      right: 18px;
-      bottom: 18px;
-      width: 58px;
-      height: 58px;
-      border-radius: 50%;
-      background: #25D366;
-      color: white;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-decoration: none;
-      font-size: 29px;
-      box-shadow: 0 4px 18px rgba(0,0,0,.25);
-      z-index: 20;
-    }
-
-    @media (max-width: 800px) {
-      h1 {
-        font-size: 34px;
-      }
-
-      .grid {
-        grid-template-columns: 1fr;
-      }
-
-      .hero {
-        padding: 55px 18px;
-      }
-
-      .header-phone {
-        font-size: 14px;
-      }
-
-      h2 {
-        font-size: 27px;
-      }
-    }
-  </style>
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Grúas Rosario",
-    "description": "Servicio de grúa, remolque y auxilio mecánico en Rosario y alrededores.",
-    "telephone": "+54 341 209-8098",
-    "areaServed": "Rosario, Santa Fe, Argentina",
-    "url": "https://gruarosario.com.ar",
-    "openingHours": "Mo-Su 00:00-23:59"
-  }
-  </script>
+}
+</style>
 </head>
 
 <body>
 
 <header>
-  <div class="header-content">
-    <div class="logo">GRÚAS ROSARIO</div>
-    <a class="header-phone" href="tel:+543412098098">
-      📞 341 209-8098
-    </a>
-  </div>
+    <div class="header-content">
+        <div class="logo">GRÚAS ROSARIO</div>
+        <a class="header-phone" href="tel:+543412098098">📞 341 209-8098</a>
+    </div>
 </header>
 
 <main>
 
 <section class="hero">
-  <div class="hero-content">
+    <div class="hero-content">
 
-    <div class="badge">🚨 SERVICIO 24 HORAS</div>
+        <div class="badge">🚨 SERVICIO 24 HORAS</div>
 
-    <h1>Grúa y Auxilio Mecánico en Rosario</h1>
+        <h1>Grúa y Auxilio Mecánico en Rosario</h1>
 
-    <p>
-      Servicio de grúa, remolque y auxilio mecánico para autos,
-      motos y camionetas. Atención en Rosario, alrededores
-      y traslados de larga distancia.
-    </p>
+        <p>
+            Servicio de grúa, remolque y auxilio mecánico para autos,
+            motos y camionetas. Atención en Rosario, alrededores y
+            traslados de larga distancia.
+        </p>
 
-    <div class="buttons">
+        <div class="actions">
+            <a class="btn whatsapp"
+               href="https://wa.me/543412098098?text=Hola%2C%20necesito%20consultar%20por%20un%20servicio%20de%20gr%C3%BAa."
+               target="_blank">
+                💬 Pedir grúa por WhatsApp
+            </a>
 
-      <a class="btn whatsapp"
-         href="https://wa.me/543412098098?text=Hola%2C%20necesito%20un%20servicio%20de%20gr%C3%BAa."
-         target="_blank">
-        💬 Pedir grúa por WhatsApp
-      </a>
-
-      <a class="btn call"
-         href="tel:+543412098098">
-        📞 Llamar ahora
-      </a>
+            <a class="btn call" href="tel:+543412098098">
+                📞 Llamar ahora
+            </a>
+        </div>
 
     </div>
-  </div>
 </section>
 
-<section class="services">
+<section>
+    <div class="container">
 
-  <div class="container">
+        <h2 class="section-title">Servicios de Grúa en Rosario</h2>
 
-    <h2>Servicio de Grúa en Rosario</h2>
-
-    <p class="subtitle">
-      Asistencia y traslado de vehículos las 24 horas.
-      Consultanos por disponibilidad y presupuesto.
-    </p>
-
-    <div class="grid">
-
-      <div class="card">
-        <div class="icon">🚗</div>
-        <h3>Grúa y Remolque</h3>
-        <p>
-          Traslado y remolque de vehículos en Rosario,
-          alrededores y larga distancia.
+        <p class="section-subtitle">
+            Atención las 24 horas para vehículos, traslados y cargas.
+            Consultanos disponibilidad y presupuesto.
         </p>
-      </div>
 
-      <div class="card">
-        <div class="icon">🔧</div>
-        <h3>Auxilio Mecánico</h3>
-        <p>
-          Asistencia para vehículos con inconvenientes
-          mecánicos que necesitan ayuda o traslado.
-        </p>
-      </div>
+        <div class="services">
 
-      <div class="card">
-        <div class="icon">🏍️</div>
-        <h3>Traslado de Motos</h3>
-        <p>
-          Transporte de motos de forma segura hacia
-          el destino solicitado.
-        </p>
-      </div>
+            <div class="card">
+                <div class="icon">🚗</div>
+                <h3>Remolque de Autos</h3>
+                <p>Traslado de autos con servicio de grúa en Rosario y alrededores.</p>
+            </div>
 
-      <div class="card">
-        <div class="icon">🛻</div>
-        <h3>Autos y Camionetas</h3>
-        <p>
-          Traslado de autos y camionetas con atención
-          rápida en Rosario y la región.
-        </p>
-      </div>
+            <div class="card">
+                <div class="icon">🔧</div>
+                <h3>Auxilio Mecánico</h3>
+                <p>Asistencia para vehículos con inconvenientes mecánicos que necesitan ayuda o traslado.</p>
+            </div>
 
-      <div class="card">
-        <div class="icon">⚙️</div>
-        <h3>Traslado de Máquinas</h3>
-        <p>
-          Transporte de máquinas y equipos de hasta
-          3.000 kg. Consultanos por medidas y destino.
-        </p>
-      </div>
+            <div class="card">
+                <div class="icon">🏍️</div>
+                <h3>Traslado de Motos</h3>
+                <p>Transporte de motos cuidando el vehículo durante todo el traslado.</p>
+            </div>
 
-      <div class="card">
-        <div class="icon">🛣️</div>
-        <h3>Larga Distancia</h3>
-        <p>
-          Realizamos traslados desde Rosario hacia
-          otras localidades y provincias.
+            <div class="card">
+                <div class="icon">🛻</div>
+                <h3>Autos y Camionetas</h3>
+                <p>Traslado de autos, utilitarios y camionetas en Rosario y otras localidades.</p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🏗️</div>
+                <h3>Traslado de Máquinas</h3>
+                <p>Transporte de máquinas y cargas en general de hasta 3.000 kg.</p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🛣️</div>
+                <h3>Larga Distancia</h3>
+                <p>Traslados desde Rosario hacia otras localidades y provincias.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="gallery-section">
+    <div class="container">
+
+        <h2 class="section-title">Trabajos y Traslados Realizados</h2>
+
+        <p class="section-subtitle">
+            Algunos de nuestros servicios de grúa, remolque,
+            traslado de vehículos, camionetas, máquinas y cargas.
         </p>
-      </div>
+
+        <div class="gallery">
+
+            <img src="grua_01.jpg"
+                 alt="Servicio de grúa y traslado de vehículo en Rosario"
+                 loading="lazy">
+
+            <img src="grua_02.jpg"
+                 alt="Grúa para traslado de cargas en Rosario"
+                 loading="lazy">
+
+            <img src="grua_03.jpg"
+                 alt="Remolque de camioneta con grúa en Rosario"
+                 loading="lazy">
+
+            <img src="grua_04.jpg"
+                 alt="Auxilio y traslado de vehículo en Rosario"
+                 loading="lazy">
+
+            <img src="grua_05.jpg"
+                 alt="Servicio de grúa para camioneta en Rosario"
+                 loading="lazy">
+
+            <img src="grua_06.jpg"
+                 alt="Traslado de vehículo con plancha en Rosario"
+                 loading="lazy">
+
+            <img src="grua_07.jpg"
+                 alt="Grúa y auxilio mecánico 24 horas Rosario"
+                 loading="lazy">
+
+            <img src="grua_08.jpg"
+                 alt="Servicio de remolque y transporte Rosario"
+                 loading="lazy">
+
+        </div>
 
     </div>
-  </div>
 </section>
 
 <section class="coverage">
+    <div class="container">
 
-  <div class="container">
+        <h2 class="section-title">Grúa en Rosario y Alrededores</h2>
 
-    <h2>Grúa en Rosario y alrededores</h2>
+        <p class="section-subtitle">
+            Servicio disponible las 24 horas para emergencias,
+            traslados programados y larga distancia.
+        </p>
 
-    <p class="subtitle">
-      Atendemos servicios urbanos y traslados programados
-      o de larga distancia.
-    </p>
+        <div class="coverage-box">
+            <p>📍 <strong>Rosario y alrededores</strong></p>
+            <p>🕐 Atención <strong>24 horas</strong></p>
+            <p>🛣️ Traslados de <strong>corta, media y larga distancia</strong></p>
+            <p>🇦🇷 Traslados desde Rosario hacia <strong>otras provincias</strong></p>
+            <p>🏗️ Máquinas y cargas de hasta <strong>3.000 kg</strong></p>
+        </div>
 
-    <div class="coverage-box">
-      <h3>📍 Cobertura</h3>
-
-      <p>
-        Servicio en <strong>Rosario</strong> y localidades
-        de los alrededores. También realizamos
-        <strong>traslados hacia otras provincias</strong>.
-      </p>
     </div>
-
-  </div>
 </section>
 
-<section class="emergency">
+<section class="cta">
 
-  <div class="container">
+    <div class="container">
 
-    <h2>¿Necesitás una grúa?</h2>
+        <h2>¿Necesitás una grúa?</h2>
 
-    <p>
-      Comunicate directamente con nosotros para consultar
-      disponibilidad, ubicación y presupuesto.
-    </p>
+        <p>
+            Escribinos por WhatsApp y consultá disponibilidad y presupuesto.
+        </p>
 
-    <div class="buttons">
-
-      <a class="btn whatsapp"
-         href="https://wa.me/543412098098?text=Hola%2C%20necesito%20una%20gr%C3%BAa.%20Mi%20ubicaci%C3%B3n%20es%3A%20"
-         target="_blank">
-        💬 WhatsApp
-      </a>
-
-      <a class="btn call"
-         href="tel:+543412098098">
-        📞 341 209-8098
-      </a>
+        <a class="btn whatsapp"
+           href="https://wa.me/543412098098?text=Hola%2C%20necesito%20una%20gr%C3%BAa.%20Quisiera%20consultar%20disponibilidad%20y%20precio."
+           target="_blank">
+            💬 WhatsApp 341 209-8098
+        </a>
 
     </div>
 
-  </div>
 </section>
 
 </main>
 
 <footer>
-  <strong>Grúas Rosario</strong><br>
-  Grúa · Remolque · Auxilio Mecánico · Traslado de Vehículos<br>
-  Rosario, Santa Fe · Atención 24 hs<br><br>
-  📞 341 209-8098
+    <strong>Grúas Rosario</strong><br>
+    Grúa, remolque y auxilio mecánico 24 hs.<br>
+    Rosario, Santa Fe y traslados de larga distancia.<br><br>
+    📞 341 209-8098
 </footer>
 
-<a class="floating-whatsapp"
-   href="https://wa.me/543412098098?text=Hola%2C%20necesito%20una%20gr%C3%BAa."
+<a class="float-whatsapp"
+   href="https://wa.me/543412098098?text=Hola%2C%20necesito%20consultar%20por%20una%20gr%C3%BAa."
    target="_blank"
    aria-label="Contactar por WhatsApp">
-  💬
+    💬
 </a>
 
 </body>
