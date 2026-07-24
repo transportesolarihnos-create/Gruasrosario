@@ -687,9 +687,16 @@ footer strong{color:white}
 document.querySelectorAll('.track-whatsapp').forEach(function(element) {
     element.addEventListener('click', function() {
         if (typeof gtag === 'function') {
+
             gtag('event', 'click_whatsapp', {
                 'event_category': 'contacto',
                 'event_label': 'WhatsApp'
+            });
+
+            gtag('event', 'conversion', {
+                'send_to': 'AW-11481201929/6SIqCP6UutUcEIn61OIq',
+                'value': 1.0,
+                'currency': 'ARS'
             });
         }
     });
