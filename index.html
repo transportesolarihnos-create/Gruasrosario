@@ -705,9 +705,14 @@ document.querySelectorAll('.track-whatsapp').forEach(function(element) {
 document.querySelectorAll('.track-call').forEach(function(element) {
     element.addEventListener('click', function() {
         if (typeof gtag === 'function') {
+
             gtag('event', 'click_llamada', {
                 'event_category': 'contacto',
                 'event_label': 'Llamada'
+            });
+
+            gtag('event', 'conversion', {
+                'send_to': 'AW-11481201929/2smzCKqksb4cEIn61OIq'
             });
         }
     });
