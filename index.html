@@ -419,6 +419,21 @@ header{background:var(--graphite)!important;color:#fff}
   section{padding:48px 18px!important}
 }
 
+
+/* V4: sistema visual unificado para tarjetas de servicios */
+section{scroll-margin-top:84px}
+.card{padding:22px 21px 21px;border:1px solid #edf0ed;border-radius:16px;box-shadow:0 5px 18px rgba(16,20,22,.065);position:relative;overflow:hidden}
+.card:before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:#BFFF00}
+.card:hover{transform:translateY(-3px);border-color:#d9ef9b;box-shadow:0 10px 26px rgba(16,20,22,.12)}
+.card .icon{width:50px;height:50px;display:flex;align-items:center;justify-content:center;margin:0 0 15px;background:#BFFF00;color:#101416;border-radius:12px;font-size:0}
+.card .icon svg{width:27px;height:27px;display:block;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.card h2,.card h3{color:#101416;line-height:1.25;margin-bottom:8px}
+.card p{color:#4b5563;line-height:1.6;font-size:15.5px}
+.card-link{display:inline-flex;align-items:center;gap:8px;margin-top:13px;padding:9px 0 2px;color:#101416;font-weight:800;text-decoration:none;border-bottom:2px solid #BFFF00;transition:gap .18s ease}
+.card-link:hover{gap:12px;text-decoration:none;color:#101416}
+.section-subtitle{line-height:1.65;color:#56616a;margin-bottom:30px}
+@media(max-width:600px){section{padding:46px 16px}.section-title{font-size:29px;line-height:1.18}.section-subtitle{margin-bottom:25px}.services{gap:14px}.card{padding:19px 17px 18px;border-radius:15px}.card .icon{width:46px;height:46px;margin-bottom:12px}.card h2,.card h3{font-size:19px}.card p{font-size:15px}.card-link{margin-top:10px}}
+
 </style>
 
 <body>
@@ -490,7 +505,7 @@ header{background:var(--graphite)!important;color:#fff}
     <div class="services">
 
         <article class="card">
-            <div class="icon">🚨</div>
+            <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 15h12l-1.2-6a4.9 4.9 0 0 0-9.6 0L6 15Z"/><path d="M4 18h16M9 21h6M12 1v2M3.5 5 5 6M20.5 5 19 6"/></svg></div>
             <h3>Grúa 24 Horas</h3>
             <p>
                 Servicio de grúa para autos, motos y camionetas
@@ -502,7 +517,7 @@ header{background:var(--graphite)!important;color:#fff}
         </article>
 
         <article class="card">
-            <div class="icon">🚗</div>
+            <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 11 1.5-4h11L19 11l2 2v5h-2M5 18H3v-5l2-2Z"/><path d="M6 11h12M7 18h10"/><circle cx="7" cy="17" r="1.8"/><circle cx="17" cy="17" r="1.8"/></svg></div>
             <h3>Remolque de Autos</h3>
             <p>
                 Servicio de remolque y traslado de autos dentro
@@ -514,7 +529,7 @@ header{background:var(--graphite)!important;color:#fff}
         </article>
 
         <article class="card">
-            <div class="icon">🔧</div>
+            <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.5 6.5a5 5 0 0 0-6.3 6.3L3 18a2.1 2.1 0 0 0 3 3l5.2-5.2a5 5 0 0 0 6.3-6.3l-3 3-3-3Z"/></svg></div>
             <h3>Auxilio Mecánico</h3>
             <p>
                 Asistencia vehicular y servicio de grúa cuando
@@ -526,7 +541,7 @@ header{background:var(--graphite)!important;color:#fff}
         </article>
 
         <article class="card">
-            <div class="icon">🏍️</div>
+            <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="6" cy="17" r="3"/><circle cx="18" cy="17" r="3"/><path d="m6 17 4-7h4l4 7M9 13h7M12 10l-2-2H7M14 10l2-2h2"/></svg></div>
             <h3>Motos y Vehículos</h3>
             <p>
                 Transporte de motos, autos, camionetas y utilitarios
@@ -538,7 +553,7 @@ header{background:var(--graphite)!important;color:#fff}
         </article>
 
         <article class="card">
-            <div class="icon">🏗️</div>
+            <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21h18M6 21V5h3v16M9 7h11M9 10h8M17 7v9l-3 2M12 21v-5h5"/><path d="m17 7 2-2 2 2"/></svg></div>
             <h3>Traslado de Máquinas</h3>
             <p>
                 Transporte de máquinas, equipos y cargas en general
@@ -550,7 +565,7 @@ header{background:var(--graphite)!important;color:#fff}
         </article>
 
         <article class="card">
-            <div class="icon">🛣️</div>
+            <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 22 11 2M16 22 13 2M12 5v3m0 3v3m0 3v3"/></svg></div>
             <h3>Larga Distancia</h3>
             <p>
                 Traslados desde Rosario hacia otras localidades
