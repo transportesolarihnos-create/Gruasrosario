@@ -308,6 +308,31 @@ footer a{color:white}
     .btn{width:100%}
     .section-title{font-size:29px}
 }
+
+/* Ajustes V3: identidad de emergencia y conversión móvil */
+:root{--emergency-lime:#BFFF00;--graphite:#101416;--steel:#30383D;--paper:#F7F6F2}
+header{background:var(--graphite)!important;color:#fff}
+.header-phone,.er-phone{color:#fff!important;text-decoration:none!important;font-weight:800;white-space:nowrap}
+.header-phone:hover,.er-phone:hover{color:var(--emergency-lime)!important}
+.logo{letter-spacing:.2px}
+.badge{background:var(--emergency-lime)!important;color:var(--graphite)!important}
+.btn.whatsapp,.whatsapp{background:var(--emergency-lime)!important;color:var(--graphite)!important}
+.btn.call,.call{background:var(--graphite)!important;color:#fff!important;border:2px solid var(--emergency-lime)!important}
+.btn{transition:transform .15s ease,filter .15s ease}
+.btn:hover{filter:brightness(1.04);transform:translateY(-1px)}
+@media(max-width:520px){
+  header{padding:15px 16px!important}
+  .header-content{gap:8px!important}
+  .logo{font-size:17px!important}
+  .header-phone,.er-phone{font-size:14px!important}
+  .hero{padding:48px 18px 52px!important}
+  .hero h1{font-size:clamp(30px,8vw,37px)!important;line-height:1.12!important;margin-bottom:20px!important}
+  .hero p{font-size:17px!important;line-height:1.55!important;margin-bottom:25px!important}
+  .badge{margin-bottom:20px!important}
+  .btn{font-size:16px!important;padding:14px 16px!important}
+  section{padding:48px 18px!important}
+}
+
 </style>
 </head>
 
