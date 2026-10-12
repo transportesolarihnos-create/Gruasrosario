@@ -1,2 +1,0 @@
-# Gruasrosario
-Gruas Rosario 
